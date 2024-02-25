@@ -1,65 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: repeating-linear-gradient(45deg, #f3eded, #f9e3e3 30px, #fff 30px, #fff 60px);
+}
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Resume</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+.resume {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
 
-<body>
-  <div class="resume">
+.main {
+  padding: 20px;
+}
 
-    <div class="header">
-      <h1>Your Name</h1>
-    </div>
+.header {
+  background-color: #f9e3e3;
+  padding: 20px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
 
-    <div class="about-me">
-      <div class="about-me-content">
-        <p> Aspiring (field) passionate about (what). Based in (location)</p>
-      </div>
-    </div>
-
-
-    <div class="main">
-
-      <section>
-        <h2>Education</h2>
-
-        <div class="entry">
-          <h3>School name</h3>
-          <p>Class rank: x/x | GPA: </p>
-          <p>Graduation year: (year)</p>
-        </div>
-      </section>
-
-      <section>
-        <h2>Experience</h2>
-
-        <div class="entry">
-          <h3>Role</h3>
-
-          <p><em>Month year - Present</em></p>
-          <ul>
-            <li>note</li>
-            <li>note</li>
-
-          </ul>
-        </div>
+.header h1 {
+  margin: 0;
+  color: #cc3366;
+  font-size: 2em;
+  text-align: center;
+}
 
 
-      </section>
-      <section>
-        <h2>Skills</h2>
-        <ul class="skills">
-          <li>skill</li>
-        </ul>
-      </section>
-    </div>
-    <div class="contact-info">
-      <p>Email: john.doe@example.com | Phone: (123) 456-7890 | LinkedIn: linkedin.com/in/johndoe | GitHub: github.com/johndoe</p>
-    </div>
-  </div>
-</body>
-</html>
+h2 {
+  color: #cc3366;
+  margin-top: 0;
+}
+
+.entry {
+  margin-bottom: 30px;
+}
+
+.entry h3 {
+  margin-top: 0;
+  color: #cc3366;
+}
+
+.entry p em {
+  font-style: italic;
+  color: #666;
+}
+
+.skills {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  margin-right: 20px;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  background-color: #f3d7d7;
+  border-radius: 5px;
+  color: #cc3366;
+}
+
+.contact-info {
+  background-color: #f9e3e3;
+  padding: 20px;
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+}
+
+.contact-info p {
+  margin: 0;
+  color: #666;
+}
